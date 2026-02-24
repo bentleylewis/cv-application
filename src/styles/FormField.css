@@ -1,0 +1,14 @@
+.field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    text-align: left;
+}
+
+input {
+    background: black;
+    outline: none;
+}

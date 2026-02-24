@@ -1,0 +1,122 @@
+.welcome-container {
+    animation: slideUpBounce 1s ease-in-out both;
+}
+
+.welcome-header {
+    font-size: 48px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.welcome-paragraph {
+    font-size: 20px;
+    text-align: center;
+}
+
+.github-button, .create-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-button {
+background: #020617;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(66, 72, 90, 0.15), 0 2px 8px rgba(2, 6, 23, 0.45);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  gap: 0.4rem;
+}
+
+.github-button img {
+    width: 1.3rem;
+    height: 1.3rem;
+    object-fit: contain;
+    display: block;
+}
+
+
+.github-button:hover {
+  border-color: rgba(96, 165, 250, 0.55);
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.28), 0 4px 12px rgba(2, 6, 23, 0.55);
+}
+
+.create-button {
+    background-color: white;
+    color: black;
+    transition: background-color 0.4s ease;
+}
+
+.create-button:hover {
+    background-color: rgba(255, 255, 255, 0.726);
+}
+
+.welcome-action-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* .word {
+    display: inline-block;
+    opacity: 0;
+    animation: flyUp .5s ease-out forwards;
+} */
+
+.simple {
+    display: inline-block;
+    opacity: 0;
+    animation: flyDown .5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+
+.easy {
+    display: inline-block;
+    opacity: 0;
+    animation: flyUp .5s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.free {
+    display: inline-block;
+    opacity: 0;
+    animation: flyLeft .5s ease-out forwards;
+    animation-delay: 2s;
+}
+/* 
+.word:nth-child(1) {animation-delay: .75s;}
+.word:nth-child(2) {animation-delay: 1.0s;}
+.word:nth-child(3) {animation-delay: 1.25s;} */
+
+@keyframes slideUpBounce{
+    0% { opacity: 0; transform: translateY(30vh); } 
+  75%  { opacity: 1; transform: translateY(-25px); } 
+  100% { transform: translateY(0); }   
+}
+
+@keyframes flyUp {
+    from { opacity: 0; transform: translateY(30vh); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes flyDown {
+    from { opacity: 0; transform: translateY(-30vh); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes flyLeft {
+    from { opacity: 0; transform: translateX(30vh); }
+    to { opacity: 1; transform: translateY(0); }
+}

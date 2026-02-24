@@ -1,0 +1,6 @@
+.card-body {
+    border: #646cff 1px outset;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
