@@ -3,12 +3,22 @@
     flex-direction: column;
 }
 
-label {
+.field-label {
     font-size: 14px;
     text-align: left;
+    font-weight: 400;
 }
 
-input {
-    background: black;
+.input-field {
+    box-sizing: border-box;
+    background: #020617;
     outline: none;
+    min-height: 2.5rem;
+    border: rgb(30 41 59) 1px solid;
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.input-field:focus {
+    border: rgba(255, 255, 255, 0.856) solid 1px;
 }

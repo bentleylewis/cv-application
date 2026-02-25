@@ -1,15 +1,16 @@
 import '../styles/FormField.css'; 
 
-function FormField({ label, type, value, onChange, placeholder }) {
+function FormField({ label, type, value, name, onChange }) {
     return (
         <div className = 'field-container'>
-            <label>{label}</label>
+            <label className='field-label'>{label}</label>
 
-            <input
+            <input className="input-field"
             type={type}
             value={value}
+            name={name}
             onChange={onChange}
-            placeholder={placeholder}/>
+            />
 
         </div>
     )

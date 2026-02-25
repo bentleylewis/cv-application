@@ -1,0 +1,22 @@
+.fields-container {
+display: flex;
+flex-direction: column;
+gap: .5rem;
+}
+
+.location-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.location-row > :nth-child(1) {flex: 2;}
+.location-row > :nth-child(2) {flex: 1;}
+.location-row > :nth-child(3) {flex: 1;}
+
+.contact-row {
+display: flex;
+gap: 1rem;
+}
+
+.contact-row > :nth-child(1) {flex:1;}
+.contact-row > :nth-child(2) {flex:1;}
