@@ -1,4 +1,4 @@
-import GitHub_InvertoCat_White from '../assets/GitHub_InvertoCat_White.svg';
+import GitHub_InvertoCat_White from '../assets/GitHub_Invertocat_White.svg';
 import '../styles/Welcome.css';
 
 function Welcome({ onNext }) {
