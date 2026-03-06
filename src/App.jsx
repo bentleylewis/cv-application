@@ -175,7 +175,7 @@ if(currentView === 'preview') {
 }
 
   return (
-    <div className={`app-shell ${currentView === 'preview' ? 'preview-view' : 'cards-view'}`}>
+    <div className={`app-shell ${currentView === 'preview' ? 'preview-view' : 'cards-view'} ${currentView === 'welcome' ? 'welcome-view' : ''}`}>
       {content}
     </div>
   );

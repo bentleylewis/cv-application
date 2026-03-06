@@ -7,13 +7,18 @@
   width: 100%;
 }
 
-#root,
+/* #root,
 .app-shell {
   overflow-x: hidden;
-}
+} */
 
 .app-shell {
   width: 100%;
+  overflow-x: hidden;
+}
+
+.app-shell.welcome-view {
+  overflow-x: visible;
 }
 
 .app-shell.cards-view {
