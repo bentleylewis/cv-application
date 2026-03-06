@@ -3,7 +3,7 @@
 .school-field-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .row-one,

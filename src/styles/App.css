@@ -7,6 +7,11 @@
   width: 100%;
 }
 
+#root,
+.app-shell {
+  overflow-x: hidden;
+}
+
 .app-shell {
   width: 100%;
 }
