@@ -20,3 +20,11 @@ gap: 1rem;
 
 .contact-row > :nth-child(1) {flex:1;}
 .contact-row > :nth-child(2) {flex:1;}
+
+@media (max-width: 768px) {
+    .location-row,
+    .contact-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

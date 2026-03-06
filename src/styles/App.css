@@ -22,6 +22,20 @@
 }
 
 html, body {
-  height: 100%;
-  overflow: hidden;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  #root {
+    align-items: stretch;
+    min-height: 100dvh;
+  }
+
+  .app-shell.cards-view {
+    padding-top: 1rem;
+    padding-inline: 0.75rem;
+  }
+
 }

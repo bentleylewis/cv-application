@@ -36,3 +36,11 @@
 .row-two > :nth-child(3) {
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .row-one,
+  .row-two {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
