@@ -2,41 +2,34 @@ import Card from "./Card";
 import FormField from './FormField';
 
 import '../styles/GeneralInfo.css';
-import { useState } from "react";
 
-function GeneralInfo() {
-    const [form, setForm] = useState({
-        fullName: "",
-        address: "",
-        city: "",
-        zip: "",
-        email: "",
-        phone: "",
-        github: "",
-    });
+
+function GeneralInfo( { onNext, data, updateData }) {
 
     const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((prev) => ({
-        ...prev, [name]: value}));
+    updateData({
+        ...data, [name]: value
+    });
     };
 
     return (
-    <Card title = "Personal Information" subhead= "This is what the employers need to know about you">
+    <Card title = "Personal Information" subhead= "This is what the employers need to know about you" onNext={onNext}>
 
     <div className="fields-container">
     <FormField 
     label='Full Name'
     type='text' 
-    value={form.fullName}
+    value={data.fullName}
     name={'fullName'} 
     onChange={handleChange} 
     />
-    <div className="location-row">
-    <FormField 
+    
+{/* <div className="location-row"></div> */}
+    {/* <FormField 
     label='Address'
     type='text' 
-    value={form.address} 
+    value={data.address} 
     name={'address'} 
     onChange={handleChange} 
     />
@@ -44,7 +37,7 @@ function GeneralInfo() {
     <FormField 
     label='City'
     type='text' 
-    value={form.city} 
+    value={data.city} 
     name={'city'} 
     onChange={handleChange}  
     />
@@ -52,17 +45,17 @@ function GeneralInfo() {
     <FormField 
     label='Zip Code'
     type='text' 
-    value={form.zip} 
+    value={data.zip} 
     name={'zip'} 
     onChange={handleChange} 
-    />
-</div>
+    /> */}
+{/* </div> */}
 
 <div className="contact-row">
     <FormField 
     label='Email'
     type='text' 
-    value={form.email} 
+    value={data.email} 
     name={'email'} 
     onChange={handleChange}  
     />
@@ -70,18 +63,32 @@ function GeneralInfo() {
     <FormField 
     label='Phone'
     type='text' 
-    value={form.phone} 
+    value={data.phone} 
     name={'phone'} 
-    onChange={handleChange}  
+    onChange={handleChange}
+    placeholder="xxx-xxx-xxxx"
     />
 </div>
+
+<div className="location-row">
+        
+        <FormField 
+        label='linkedIn'
+        type='text' 
+        value={data.linkedIn} 
+        name={'linkedIn'} 
+        onChange={handleChange}  
+        placeholder= "linkedin.com/in/<name>"
+        />
+ </div>
 
     <FormField 
     label='GitHub'
     type='text' 
-    value={form.github} 
+    value={data.github} 
     name={'github'} 
     onChange={handleChange} 
+    placeholder="github.com/<name>"
     />
 </div>
 

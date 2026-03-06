@@ -7,6 +7,7 @@
     font-size: 14px;
     text-align: left;
     font-weight: 400;
+    
 }
 
 .input-field {
@@ -17,8 +18,12 @@
     border: rgb(30 41 59) 1px solid;
     border-radius: 8px;
     font-weight: 400;
+    padding: 8px;
+    resize: none;
 }
 
 .input-field:focus {
     border: rgba(255, 255, 255, 0.856) solid 1px;
 }
+
+

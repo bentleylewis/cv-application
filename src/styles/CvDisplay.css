@@ -1,0 +1,187 @@
+.resume-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.resume {
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  background: #fff;
+  color: #111;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.35;
+  box-sizing: border-box;
+}
+
+.resume-controls {
+  width: 100%;
+  padding: 0.5rem 1.25rem;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.resume-header p {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+}
+
+.resume-section {
+  margin-top: 1rem;
+}
+
+.resume-section h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.15rem;
+}
+
+.entry {
+  margin-top: 0.45rem;
+}
+
+.heading-line,
+.subheading-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.heading-line h3,
+.heading-line p,
+.subheading-line p {
+  margin: 0;
+}
+
+.heading-line h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.subheading-line p:first-child {
+  font-style: italic;
+}
+
+.nav-button {
+   background: #020617;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(66, 72, 90, 0.15), 0 2px 8px rgba(2, 6, 23, 0.45);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  gap: 0.4rem;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
+.bullets {
+  margin: 0.35rem 0 0 1.1rem;
+  padding-left: 1rem;
+}
+
+.bullets li {
+  margin-bottom: 0.2rem;
+}
+
+.language-line,
+.technologies-line {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.language-line h3,
+.technologies-line h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.language-line p,
+.technologies-line p {
+  margin: 0;
+}
+
+/* Print-friendly */
+@media print {
+  @page {
+    size: Letter;
+    margin: 0.5in;
+  }
+
+  html,
+  body {
+    height: auto;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  #root,
+  .app-shell,
+  .app-shell.preview-view,
+  .resume-container {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #fff;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .resume {
+    width: 100%;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .resume-section,
+  .entry,
+  .heading-line,
+  .subheading-line {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+.degree-container {
+  display: flex;
+}

@@ -1,0 +1,41 @@
+@import './shared.css';
+
+.company-row-one {
+  display: flex;
+  gap: 1rem;
+}
+
+.company-row-one > :nth-child(1) {
+  flex: 1;
+}
+
+.company-row-one > :nth-child(2) {
+  flex: 1;
+}
+
+.company-row-one > :nth-child(3) {
+  flex: 1;
+}
+
+.company-row-two {
+  display: flex;
+  gap: 1rem;
+}
+
+.company-row-two > :nth-child(1) {
+  flex: 2;
+}
+
+.company-row-two > :nth-child(2) {
+  flex: 0.5;
+}
+
+.company-row-two > :nth-child(3) {
+  flex: 0.5;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}

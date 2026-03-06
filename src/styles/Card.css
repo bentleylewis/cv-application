@@ -1,18 +1,23 @@
 .card {
+    
     border: rgb(30 41 59) 1px solid;
     border-radius: 6px;
     color: rgb(255, 255, 255);
     padding: 2rem;
     min-width: 50vw;
-    min-height: 45vh;
+    min-height: 50vh;
+    max-height: 50vh;
     padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title {
     font-size: 18px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
+    flex-shrink: 0;
 }
 
 .card-subtitle {
@@ -20,4 +25,44 @@
     margin-top: 0px;
     font-size: 14px;
     margin-bottom: 1.5rem;
+    flex-shrink: 0;
+}
+
+.card-body {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    scrollbar-width: none;  /* Firefox */
+}
+
+.card-body::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Edge */
+}
+
+.nav-buttons-container.both {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.nav-buttons-container.single {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+.nav-button {
+  background: #020617;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(66, 72, 90, 0.15), 0 2px 8px rgba(2, 6, 23, 0.45);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  gap: 0.4rem;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
+.nav-button:hover{
+    background-color: #050f3a;
+  border-color: rgba(96, 165, 250, 0.55);
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.28), 0 4px 12px rgba(2, 6, 23, 0.55);
+  cursor: pointer;
 }

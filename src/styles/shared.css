@@ -1,0 +1,81 @@
+/* Shared Button Styles */
+.additional-info-button {
+  background: #020617;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(66, 72, 90, 0.15), 0 2px 8px rgba(2, 6, 23, 0.45);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  gap: 0.4rem;
+  min-width: 4rem;
+  min-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.additional-info-button:hover {
+  background-color: #050f3a;
+  border-color: rgba(96, 165, 250, 0.55);
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.28), 0 4px 12px rgba(2, 6, 23, 0.55);
+  cursor: pointer;
+}
+
+.delete-button {
+  background: #020617;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(66, 72, 90, 0.15), 0 2px 8px rgba(2, 6, 23, 0.45);
+  transition: border-color 0.2s ease, box-shadow 0.5s ease, background-color 0.2s ease;
+  gap: 0.4rem;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.delete-button:hover {
+  background-color: red;
+  transition: 0.35s ease-in-out;
+}
+
+/* Entry Header Styles */
+.entry-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 2rem;
+  height: 2.5rem;
+  max-height: 2.5rem;
+  background-color: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry-header:hover {
+  transition: 0.25s ease-in;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.entry-header.open {
+  transition: 1s ease;
+  border: 1px solid rgba(63, 187, 228, 0.872);
+}
+
+.entry-header-buttons-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chevron Icon Styles */
+.chevron {
+  transition: transform 0.3s ease;
+  margin-left: auto;
+}
+
+.chevron.open {
+  transform: rotate(90deg);
+}

@@ -3,7 +3,22 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  padding-top: 0;
+  width: 100%;
+}
+
+.app-shell {
+  width: 100%;
+}
+
+.app-shell.cards-view {
+  display: flex;
+  justify-content: center;
   padding-top: 20vh;
+}
+
+.app-shell.preview-view {
+  padding-top: 0;
 }
 
 html, body {
