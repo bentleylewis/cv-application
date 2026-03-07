@@ -37,6 +37,30 @@ html, body {
   overflow-x: hidden;
 }
 
+@media print {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: visible;
+  }
+
+  #root {
+    padding-top: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .app-shell,
+  .app-shell.preview-view,
+  .app-shell.cards-view {
+    padding-top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   #root {
     align-items: stretch;

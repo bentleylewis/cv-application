@@ -142,8 +142,8 @@
   body {
     height: auto;
     overflow: visible;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     background: #fff;
   }
 
@@ -154,14 +154,14 @@
     width: 100%;
     min-height: 0;
     height: auto;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     display: block;
     background: #fff;
   }
 
   .no-print {
-    display: none;
+    display: none !important;
   }
 
   .resume {
@@ -171,10 +171,38 @@
     box-shadow: none;
     border-radius: 0;
     padding: 0;
+    line-height: 1.3;
   }
 
-  .resume-section,
-  .entry,
+  /* Reduce spacing in print to fit more content */
+  .resume-header {
+    margin-bottom: 0.75rem;
+  }
+
+  .resume-section {
+    margin-top: 0.75rem;
+  }
+
+  .resume-section h2 {
+    margin-bottom: 0.35rem;
+    page-break-after: avoid;
+  }
+
+  .entry {
+    margin-top: 0.35rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .bullets {
+    margin: 0.25rem 0 0 1.1rem;
+  }
+
+  .bullets li {
+    margin-bottom: 0.15rem;
+  }
+
+  /* Prevent orphaned headings */
   .heading-line,
   .subheading-line {
     break-inside: avoid;

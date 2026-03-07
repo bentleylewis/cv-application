@@ -50,11 +50,11 @@ function CvDisplay({ data, onBack }) {
                 <div className='entry' key={index}>
                 <div className= "heading-line">
                     <h3>{entry.companyName} | {entry.positionTitle} </h3>
-                    <p>{entry.dateFrom} - {entry.dateEnd}</p>
+                    <p>{entry.location}</p>
                 </div>
                 <div className="subheading-line">
                     <p>{entry.technologies}</p>
-                    <p>{entry.location}</p>
+                    <p>{entry.dateFrom} - {entry.dateEnd}</p>
                 </div>
 
                 <ul className='bullets'>
@@ -78,10 +78,7 @@ function CvDisplay({ data, onBack }) {
                 {data.Projects.map((entry, index) => (
                 <div className='entry' key={index}>
                 <div className="heading-line">
-                    <h3>{entry.projectName}</h3>
-                </div>
-                <div className="subheading-line">
-                    <p>{entry.technologies}</p>
+                    <h3>{entry.projectName} | <span style={{fontWeight: 'normal', fontStyle: 'italic'}}>{entry.technologies}</span></h3>
                 </div>
                 <ul className='bullets'>
                 {entry.description
