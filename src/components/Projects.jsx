@@ -77,7 +77,7 @@ function Projects({ data, onBack, onNext, updateData, addProject, removeProject}
                 name="description"
                 onChange={(e) => handleChange(index, e)}
                 rows={3}
-                placeholder='Each new line will act as a bullet point'
+                placeholder='Write one highlight per line; each line becomes a bullet in the preview.'
                 />
                 </div>
             )}

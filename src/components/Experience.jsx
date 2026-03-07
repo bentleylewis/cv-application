@@ -89,7 +89,7 @@ function Experience({ onNext, onBack, data, updateData, addExperience, removeExp
         type='text'
         value={entry.dateFrom}
         name='dateFrom'
-        placeholder="Eg: Aug, 2025"
+        placeholder="Eg: Aug. 2025"
         onChange = {(e) => handleChange(e, index)}
         />
 
@@ -98,7 +98,7 @@ function Experience({ onNext, onBack, data, updateData, addExperience, removeExp
         type='text'
         value={entry.dateEnd}
         name='dateEnd'
-        placeholder="Eg: Jan, 2026"
+        placeholder="Eg: Jan. 2026"
         onChange = {(e) => handleChange(e, index)}
         />
     </div>
@@ -109,7 +109,7 @@ function Experience({ onNext, onBack, data, updateData, addExperience, removeExp
         name='responsibilities'
         onChange = {(e) => handleChange(e, index)}
         rows={3}
-        placeholder='(New line creates bullet point in preview)'
+        placeholder='Write one responsibility per line; each line becomes a bullet in the preview.'
         />
         </div>
         )}
